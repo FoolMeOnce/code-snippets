@@ -1,0 +1,10 @@
+## Better HTML syntax highlighting for Nano.
+## Place this file in /usr/share/nano
+
+syntax "html" "\.htm[l]?$"
+color cyan start="<" end=">"
+color green start="\{%" end="%\}"
+color brightgreen start="\{\{" end="\}\}"
+color red "&[^;[[:space:]]]*;"
+color yellow "".*"|qq\|.*\|"
+color red "(alt|bgcolor|height|href|label|longdesc|name|onclick|onfocus|onload|onmouseover|size|span|src|style|target|type|value|width)="
